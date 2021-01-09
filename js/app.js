@@ -19,7 +19,7 @@ function createCircles(ctx){
     ctx.canvas.width = window.innerWidth;
 
     const circles = new circleList(ctx);
-    const amt = 100;
+    const amt = 120;
 
     if(circles.list.length > 0) circles.emptyList();
     circles.generateList(amt);
