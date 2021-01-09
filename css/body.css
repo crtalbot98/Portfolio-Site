@@ -1,0 +1,31 @@
+.main{
+    font-size: 1.5em;
+    background-color: var(--mainLight);
+    color: var(--darkText);
+}
+
+.projectCont{
+    background-color: #fff;
+    width: 30em;
+    height: 20em;
+    -webkit-box-shadow: 0 0 15px 2px rgba(0,0,0,0.25);
+    box-shadow: 0 0 15px 2px rgba(0,0,0,0.25);
+}
+
+.projectCont span{
+    display: block;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    height: calc(50% + 1em);
+    width: calc(100% + 2em);
+    margin-left: -1em;
+    margin-top: -1em;
+    margin-bottom: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#imgToGradients{
+    background-image: url("../images/image-to-gradient.png");
+    background-color: var(--mainDark);
+}

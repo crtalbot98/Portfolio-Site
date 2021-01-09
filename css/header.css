@@ -1,0 +1,16 @@
+.header {
+    background-color: var(--mainDark);
+    width: 100vw;
+}
+
+.headerText{
+    position: absolute;
+    background-color: var(--mainDark);
+    color: var(--lightText);
+    font-size: 2.5em;
+    width: 80%;
+    height: 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

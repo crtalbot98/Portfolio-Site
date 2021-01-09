@@ -1,0 +1,27 @@
+.box{
+    padding: 1em;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+}
+
+.centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.evenRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.evenRow > div{
+    margin: 1em;
+}
+
+.title{
+    align-self: self-end;
+}
