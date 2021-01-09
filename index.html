@@ -5,13 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chandler Talbot's Portfolio</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <canvas height="100px" width="100px"></canvas>
-    <div class="header">
-      <h1>Hello, I'm Chandler Talbot</h1>
-      <p>I love building out full-stack web applications</p>
+    <div class="header centered">
+        <canvas height="100px" width="100px"></canvas>
+        <div class="headerText box">
+            <h1>Hello, I'm Chandler Talbot</h1>
+            <p>I spend a lot of my time building full-stack web applications.</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2 class="title">Projects</h2>
+        <div class="evenRow">
+            <div class="box projectCont">
+                <span id="imgToGradients" aria-label="Photo of Image to Gradients" role="img"></span>
+                <h3>Image to Gradients</h3>
+                <p>Simply upload an image from your device or select one of the thousands of images provided by Usplash. Once an image has been selected a list of gradients will be generated from its colors.</p>
+                <p>Create with: JavaScript, React, LESS CSS, and Node.js</p>
+            </div>
+            <div class="box projectCont">
+                <h3>Image to Gradients</h3>
+                <p>Simply upload an image from your device or select one of the thousands of images provided by Usplash. Once an image has been selected a list of gradients will be generated from its colors.</p>
+                <p>Create with: JavaScript, React, LESS CSS, and Node.js</p>
+            </div>
+        </div>
     </div>
 
     <script type="module" src="./js/app.js"></script>
