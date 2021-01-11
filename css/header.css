@@ -9,7 +9,7 @@
     color: var(--lightText);
     font-size: 2.5em;
     width: 80%;
-    height: 8em;
+    min-height: 8em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

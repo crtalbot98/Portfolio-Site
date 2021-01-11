@@ -4,16 +4,16 @@
     color: var(--darkText);
 }
 
-.projectCont{
+.card{
     background-color: #fff;
     width: 26em;
-    min-height: 28em;
+    min-height: 30em;
     -webkit-box-shadow: 0 0 15px 2px rgba(0,0,0,0.25);
     box-shadow: 0 0 15px 2px rgba(0,0,0,0.25);
     position: relative;
 }
 
-.projectCont span{
+.card span{
     display: block;
     border-top-left-radius: 0.25em;
     border-top-right-radius: 0.25em;
@@ -26,9 +26,10 @@
     background-position: center;
     background-size: cover;
     background-color: var(--mainDark);
+    border-bottom: 1px solid var(--mainLight)
 }
 
-.projectCont *{
+.card *{
     margin-bottom: 1em;
 }
 
@@ -38,4 +39,16 @@
 
 #parkingLots{
     background-image: url("../images/show-me-the-parking-lots.png");
+}
+
+#weatherRec{
+    background-image: url("../images/weather-recommends.png");
+}
+
+#artGamma{
+    background-image: url("../images/art-gamma-code.png");
+}
+
+#protekSite{
+    background-image: url("../images/protek-corp-site.png");
 }

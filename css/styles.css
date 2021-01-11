@@ -54,6 +54,10 @@
     position: absolute;
 }
 
+.hoverMenu p{
+    color: var(--lightText)
+}
+
 button{
     border: 1px solid var(--mainLight);
     color: var(--darkText);
