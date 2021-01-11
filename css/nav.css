@@ -1,0 +1,36 @@
+nav{
+    position: fixed;
+    height: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    box-sizing: border-box;
+    padding-right: 2em;
+    background-color: var(--mainDark);
+    z-index: 20;
+}
+
+nav a{
+    margin-left: 2em;
+    color: var(--mainLight);
+}
+
+nav a:hover{
+    border-bottom: 2px solid var(--mainLight);
+}
+
+.light:hover{
+    border-bottom: 2px solid var(--mainLight);
+}
+
+.dark:hover{
+    border-bottom: 2px solid var(--mainDark);
+}
+
+.link{
+    text-decoration: none;
+    height: 2em;
+    font-size: 1em;
+}
