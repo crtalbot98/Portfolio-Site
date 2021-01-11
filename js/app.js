@@ -1,9 +1,13 @@
 import circleList from "./circles.js";
+import cards from "./cards.js";
 
 (function(){
 
     const canvas = document.querySelector('canvas');
     const ctx = canvas.getContext('2d');
+    const cardsEvt = new cards();
+
+    cardsEvt.addListeners();
 
     ctx.canvas.width = window.innerWidth;
     ctx.canvas.height = window.innerHeight;
