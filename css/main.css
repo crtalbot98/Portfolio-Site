@@ -9,6 +9,10 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 canvas{
     display: block;
 }

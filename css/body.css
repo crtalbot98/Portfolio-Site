@@ -1,15 +1,16 @@
 .main{
-    font-size: 1.5em;
+    font-size: 1.25em;
     background-color: var(--mainLight);
     color: var(--darkText);
 }
 
 .projectCont{
     background-color: #fff;
-    width: 30em;
-    height: 20em;
+    width: 26em;
+    min-height: 28em;
     -webkit-box-shadow: 0 0 15px 2px rgba(0,0,0,0.25);
     box-shadow: 0 0 15px 2px rgba(0,0,0,0.25);
+    position: relative;
 }
 
 .projectCont span{
@@ -23,9 +24,18 @@
     margin-bottom: 1em;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    background-color: var(--mainDark);
+}
+
+.projectCont *{
+    margin-bottom: 1em;
 }
 
 #imgToGradients{
     background-image: url("../images/image-to-gradient.png");
-    background-color: var(--mainDark);
+}
+
+#parkingLots{
+    background-image: url("../images/show-me-the-parking-lots.png");
 }
