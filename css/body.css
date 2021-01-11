@@ -1,54 +1,15 @@
+@import "cards.css";
+@import "textBox.css";
+
 .main{
     font-size: 1.25em;
-    background-color: var(--mainLight);
     color: var(--darkText);
 }
 
-.card{
-    background-color: #fff;
-    width: 26em;
-    min-height: 30em;
-    -webkit-box-shadow: 0 0 15px 2px rgba(0,0,0,0.25);
-    box-shadow: 0 0 15px 2px rgba(0,0,0,0.25);
-    position: relative;
+.main > div{
+    margin-bottom: 4em;
 }
 
-.card span{
-    display: block;
-    border-top-left-radius: 0.25em;
-    border-top-right-radius: 0.25em;
-    height: calc(50% + 1em);
-    width: calc(100% + 2em);
-    margin-left: -1em;
-    margin-top: -1em;
-    margin-bottom: 1em;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: var(--mainDark);
-    border-bottom: 1px solid var(--mainLight)
-}
-
-.card *{
-    margin-bottom: 1em;
-}
-
-#imgToGradients{
-    background-image: url("../images/image-to-gradient.png");
-}
-
-#parkingLots{
-    background-image: url("../images/show-me-the-parking-lots.png");
-}
-
-#weatherRec{
-    background-image: url("../images/weather-recommends.png");
-}
-
-#artGamma{
-    background-image: url("../images/art-gamma-code.png");
-}
-
-#protekSite{
-    background-image: url("../images/protek-corp-site.png");
+.main > div:nth-child(even){
+    background-color: var(--mainLight);
 }
