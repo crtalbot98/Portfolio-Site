@@ -8,9 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
 </head>
+
+<nav>
+    <a class="link light" data-target="header">Home</a>
+    <a class="link light" data-target="background">About</a>
+    <a class="link light" data-target='projects'>Projects</a>
+    <a class="link light" data-target="tech">Technologies</a>
+</nav>
+
 <body>
 
-    <div class="header centered">
+    <div class="header centered" id="header">
         <canvas height="100px" width="100px"></canvas>
         <div class="headerText box">
             <h1>Hello, I'm Chandler Talbot</h1>
@@ -19,60 +27,116 @@
     </div>
 
     <div class="main">
-        <h2 class="title">Projects</h2>
-        <p class="title">Here are some of my personal, academic, and professional projects.</p>
-        <div class="evenRow">
-            <div class="box card">
-                <div class="hoverMenu hidden">
-                    <button>GitHub</button>
-                    <button>Hosted Project</button>
+
+        <div id="background">
+            <h2 class="title">Background</h2>
+            <p class="title">A little about me.</p>
+            <div class="evenRow">
+                <div class="box textBox">
+                    <span id="college" aria-label="Photo of Image to Gradients" role="img"></span>
+                    <div class="textTitle">
+                        <h3>College</h3>
+                        <p>2016 - 2020</p>
+                    </div>
+                    <div class="text">
+                        <p>In 2016, I began attending the <b>Purdue School of Engineering and Technology at IUPUI</b> as an undergraduate in <b>Computer and Information Technology</b>. This is where I found my passion for coding and software development. In 2020, I graduated, achieving a <b>3.84 GPA</b> and a <b>Bachelors of Science</b>.</p>
+                    </div>
                 </div>
-                <span id="imgToGradients" aria-label="Photo of Image to Gradients" role="img"></span>
-                <h3>Image to Gradients</h3>
-                <p>Simply upload an image from your device or select one of the thousands of images provided by Usplash. Once an image has been selected a list of gradients will be generated from its colors.</p>
-                <p>Create with: JavaScript, React, LESS CSS, and Node.js</p>
-            </div>
-            <div class="box card">
-                <div class="hoverMenu hidden">
-                    <button>GitHub</button>
-                    <button>Hosted Project</button>
+                <div class="box textBox">
+                    <span id="internship" aria-label="Photo of Image to Gradients" role="img"></span>
+                    <div class="textTitle">
+                        <h3>Internship</h3>
+                        <p>Jan. 2020 - June 2020</p>
+                    </div>
+                    <div class="text">
+                        <p>From January 2020 to July 2020 I held an internship as a <b>Web Developer Intern</b> at <b>Indiana University</b>. During my time there I:</p>
+                        <ul>
+                            <li>Rebuilt a data querying system in PHP, increasing the speed of database queries and time to a user’s device by over a factor of two.</li>
+                            <li>Developed a filtering and sorting script that more than doubled the speed of users searching for data.</li>
+                            <li>Created a script that alters a video player’s location based on the user’s position on the page.</li>
+                            <li>Improved a CMS with custom code blocks, leading to a drastic increase in functionality and usability.</li>
+                            <li>Developed and designed accessible web pages that fulfilled web content accessibility standards.</li>
+                        </ul>
+                    </div>
                 </div>
-                <span id="protekSite" aria-label="Photo of the Protek Corp. site" role="img"></span>
-                <h3>Protek Corp. Website</h3>
-                <p>Built a website and email server for a small company, increasing their business and client retention.</p>
-                <p>Create with: JavaScript, Node.js, HTML5, CSS3, and LESS CSS</p>
-            </div>
-            <div class="box card">
-                <div class="hoverMenu hidden">
-                    <button>GitHub</button>
-                    <button>Hosted Project</button>
+                <div class="box textBox">
+                    <span id="freelance" aria-label="Photo of Image to Gradients" role="img"></span>
+                    <div class="textTitle">
+                        <h3>Freelancing</h3>
+                        <p>May 2019 - Aug. 2019</p>
+                        <a class="link dark" data-target="freelanceSite">Go to project</a>
+                    </div>
+                    <div class="text">
+                        <p>During the summer of 2019 I built a website for a small business. This was a huge learning experience for me as this was the first time I built something that a company would actually use. While I am not currently interested in freelance work, this was an important part of my learning experience.</p>
+                    </div>
                 </div>
-                <span id="parkingLots" aria-label="Photo of Show Me The Parking Lots" role="img"></span>
-                <h3>Show Me The Parking Lots</h3>
-                <p>An application that showcases the various parking garages around the IUPUI campus.</p>
-                <p>Create with: JavaScript, React, Redux, CSS3, and Google Firebase</p>
-            </div>
-            <div class="box card">
-                <div class="hoverMenu hidden">
-                    <button>GitHub</button>
-                    <p>No hosted project at the moment</p>
-                </div>
-                <span id="artGamma" aria-label="Photo of Art Gamma Application" role="img"></span>
-                <h3>ArtGamma</h3>
-                <p>An application that allows users to create and share drawings. Just draw and submit to add you drawing to the collection. Click on an image to edit and view possible colors to add to it.</p>
-                <p>Create with: HTML5, Node.js, CSS3, JavaScript, Express, MongoDB, and Google Cloud Platform</p>
-            </div>
-            <div class="box card">
-                <div class="hoverMenu hidden">
-                    <button>GitHub</button>
-                    <button>Hosted Project</button>
-                </div>
-                <span id="weatherRec" aria-label="Photo of Weather Recommends" role="img"></span>
-                <h3>Weather Recommends</h3>
-                <p>An application that recommends television shows from the weather. Select your provider(s) and area to see what you could watch next.</p>
-                <p>Create with: JavaScript, HTML5, and CSS3</p>
             </div>
         </div>
+
+        <div id="projects">
+            <h2 class="title">Projects</h2>
+            <p class="title">Here are some of my personal, academic, and professional projects.</p>
+            <div class="evenRow">
+                <div class="box card">
+                    <div class="hoverMenu hidden">
+                        <button>GitHub</button>
+                        <button>Hosted Project</button>
+                    </div>
+                    <span id="imgToGradients" aria-label="Photo of Image to Gradients" role="img"></span>
+                    <h3>Image to Gradients</h3>
+                    <p>Simply upload an image from your device or select one of the thousands of images provided by Usplash. Once an image has been selected a list of gradients will be generated from its colors.</p>
+                    <p>Create with: JavaScript, React, LESS CSS, and Node.js</p>
+                </div>
+                <div class="box card" id="freelanceSite">
+                    <div class="hoverMenu hidden">
+                        <button>GitHub</button>
+                        <button>Hosted Project</button>
+                    </div>
+                    <span id="protekSite" aria-label="Photo of the Protek Corp. site" role="img"></span>
+                    <h3>Protek Corp. Website</h3>
+                    <p>Built a website and email server for a small company, increasing their business and client retention.</p>
+                    <p>Create with: JavaScript, Node.js, HTML5, CSS3, and LESS CSS</p>
+                </div>
+                <div class="box card">
+                    <div class="hoverMenu hidden">
+                        <button>GitHub</button>
+                        <button>Hosted Project</button>
+                    </div>
+                    <span id="parkingLots" aria-label="Photo of Show Me The Parking Lots" role="img"></span>
+                    <h3>Show Me The Parking Lots</h3>
+                    <p>An application that showcases the various parking garages around the IUPUI campus.</p>
+                    <p>Create with: JavaScript, React, Redux, CSS3, and Google Firebase</p>
+                </div>
+                <div class="box card">
+                    <div class="hoverMenu hidden">
+                        <button>GitHub</button>
+                        <p>No hosted project at the moment</p>
+                    </div>
+                    <span id="artGamma" aria-label="Photo of Art Gamma Application" role="img"></span>
+                    <h3>ArtGamma</h3>
+                    <p>An application that allows users to create and share drawings. Just draw and submit to add you drawing to the collection. Click on an image to edit and view possible colors to add to it.</p>
+                    <p>Create with: HTML5, Node.js, CSS3, JavaScript, Express, MongoDB, and Google Cloud Platform</p>
+                </div>
+                <div class="box card">
+                    <div class="hoverMenu hidden">
+                        <button>GitHub</button>
+                        <button>Hosted Project</button>
+                    </div>
+                    <span id="weatherRec" aria-label="Photo of Weather Recommends" role="img"></span>
+                    <h3>Weather Recommends</h3>
+                    <p>An application that recommends television shows from the weather. Select your provider(s) and area to see what you could watch next.</p>
+                    <p>Create with: JavaScript, HTML5, and CSS3</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="tech">
+
+        </div>
+
+        <footer>
+
+        </footer>
     </div>
 
     <script type="module" src="./js/app.js"></script>
