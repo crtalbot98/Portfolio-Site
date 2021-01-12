@@ -45,6 +45,9 @@
     background-image: url("../images/protek-corp-site.png");
 }
 
-#college{
-    background-image: url("../images/college.png");
+@media screen and (max-width: 500px){
+    .card{
+        min-height: 35em;
+        width: 95%;
+    }
 }
