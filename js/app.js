@@ -24,9 +24,12 @@ import links from "./links.js";
 function createCircles(ctx){
     ctx.canvas.height = window.innerHeight;
     ctx.canvas.width = window.innerWidth;
-
     const circles = new circleList(ctx);
-    const amt = 120;
+    let amt = 120;
+
+    if(window.innerWidth <= 500){
+        amt = 80
+    }
 
     if(circles.list.length > 0) circles.emptyList();
     circles.generateList(amt);
