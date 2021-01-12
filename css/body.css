@@ -7,9 +7,15 @@
 }
 
 .main > div{
-    margin-bottom: 4em;
+    padding-bottom: 3em;
 }
 
 .main > div:nth-child(even){
     background-color: var(--mainLight);
+}
+
+@media screen and (max-width: 500px){
+    .main{
+        font-size: 1em;
+    }
 }
