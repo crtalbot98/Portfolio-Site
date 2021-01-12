@@ -29,8 +29,22 @@ nav a:hover{
     border-bottom: 2px solid var(--mainDark);
 }
 
-.link{
+a{
     text-decoration: none;
+}
+
+.link{
     height: 2em;
     font-size: 1em;
+}
+
+@media screen and (max-width: 500px){
+    nav{
+        padding-right: 0;
+        justify-content: space-evenly;
+    }
+
+    nav a{
+        margin-left: 0;
+    }
 }
