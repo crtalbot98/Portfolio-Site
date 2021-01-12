@@ -1,0 +1,56 @@
+.icon{
+    text-align: center;
+}
+
+.fab, .far, .fas{
+    font-size: 3em;
+}
+
+.fa-react{
+    color: #429fd2
+}
+
+.fa-js{
+    color: #e0b752;
+}
+
+.fa-html5{
+    color: #c61629;
+}
+
+.fa-css3-alt{
+    color: #249b49;
+}
+
+.fa-node-js{
+    color: #65a136;
+}
+
+.fa-file-code{
+    color: #3b53c8;
+}
+
+.fa-less{
+    color: #2a367c;
+}
+
+.fa-php{
+    color: #7838c2;
+}
+
+.fa-database{
+    color: #75757c;
+}
+
+.fa-code-branch{
+    color: #9233af;
+}
+
+.fa-sync-alt{
+    color: #3a454b;
+}
+
+.fa-linkedin, .fa-github{
+    font-size: 2em;
+    color: var(--lightText)
+}
