@@ -1,14 +1,14 @@
 .textBox{
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-left: 2px solid var(--mainDark);
     background-color: var(--mainLight);
 }
 
 ul{
     list-style-type: none;
-    margin: 0;
+    margin: 1em 0 0 0;
     padding: 0;
 }
 
