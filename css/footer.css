@@ -1,0 +1,28 @@
+footer{
+    height: 12em;
+    background-color: var(--darkText);
+    box-sizing: border-box;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer a, footer p{
+    color: var(--lightText)
+}
+
+.contact{
+    width: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 500px){
+    footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
