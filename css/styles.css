@@ -13,23 +13,13 @@
 .evenRow{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 1em auto 0 auto;
 }
 
 .evenRow > div{
     margin: 1em;
-}
-
-.title{
-    margin: 0 auto 0 auto;
-    width: 50%;
-    text-align: center;
-}
-
-.title:nth-child(odd){
-    padding: 1em 0 0.25em 0;
 }
 
 .hidden{
@@ -75,5 +65,13 @@ button:hover{
 @media screen and (min-width: 2250px){
     .evenRow{
         width: 80%;
+    }
+}
+
+@media screen and (min-width: 1120px){
+    #projects .evenRow i{
+        width: 26em;
+        height: 30em;
+        margin: 1em;
     }
 }
