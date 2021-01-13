@@ -106,8 +106,10 @@ class circleList {
     correctColors(i){
         if(Array.isArray(this.list[i])){
             for(let k = 0; k < this.list[i].length; k++){
-                const c = 200+(k*5);
-                this.list[i][k].setColor(c,c,c)
+                const r = 252+(k*4);
+                const g = 68+(k*4);
+                const b = 69+(k*4);
+                this.list[i][k].setColor(r,g,b)
             }
         }
     }
