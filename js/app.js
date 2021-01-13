@@ -14,7 +14,7 @@ import links from "./links.js";
 
     ctx.canvas.width = window.innerWidth;
     ctx.canvas.height = window.innerHeight;
-    ctx.canvas.style.backgroundColor = '#151516';
+    ctx.canvas.style.backgroundColor = '#3feee6';
 
     createCircles(ctx);
 
