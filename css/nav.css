@@ -8,21 +8,13 @@ nav{
     color: #fff;
     box-sizing: border-box;
     padding-right: 2em;
-    background-color: var(--mainDark);
+    background-color: var(--overlayDark);
     z-index: 20;
 }
 
 nav a{
     margin-left: 2em;
-    color: var(--mainLight);
-}
-
-nav a:hover{
-    border-bottom: 2px solid var(--mainLight);
-}
-
-.light:hover{
-    border-bottom: 2px solid var(--mainLight);
+    color: var(--lightText);
 }
 
 .dark:hover{
@@ -31,6 +23,17 @@ nav a:hover{
 
 a{
     text-decoration: none;
+}
+
+a:hover{
+    color: var(--secLight);
+    box-sizing: border-box;
+    border-bottom: 2px solid var(--secLight);
+}
+
+.contact i:hover{
+    color: var(--secLight);
+    box-sizing: border-box;
 }
 
 .link{

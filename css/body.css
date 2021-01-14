@@ -11,7 +11,7 @@
 }
 
 .main > div:nth-child(even){
-    background-color: var(--mainLight);
+    background-color: var(--secLight);
 }
 
 @media screen and (max-width: 500px){

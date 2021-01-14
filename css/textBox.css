@@ -2,8 +2,12 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
-    border-left: 2px solid var(--mainDark);
-    background-color: var(--mainLight);
+    border-left: 2px solid var(--secLight);
+    background-color: var(--secDark);
+}
+
+.textBox h3{
+    color: var(--secLight);
 }
 
 ul{

@@ -1,6 +1,6 @@
 footer{
     height: 12em;
-    background-color: var(--darkText);
+    background-color: var(--mainDark);
     box-sizing: border-box;
     padding: 1em;
     display: flex;

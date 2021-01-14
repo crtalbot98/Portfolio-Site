@@ -1,6 +1,10 @@
 :root{
-    --mainDark: rgba(21, 21, 22, 0.8);
+    --overlayDark: rgba(18, 105, 117, 0.8);
+    --mainDark: #126975;
     --lightText: #f0f0f0;
-    --darkText: #171717;
-    --mainLight: #f2f6fc;
+    --darkText: #211b1d;
+    --mainLight: #cafafe;
+    --secDark: #f0f4f5;
+    --secLight: #fc4445;
+    --linkText: #fc4445;
 }
