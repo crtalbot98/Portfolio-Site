@@ -18,10 +18,9 @@ class circleList {
             this.list.push(new circle(Math.ceil(Math.random()*this.ctx.canvas.width), Math.ceil(Math.random()*this.ctx.canvas.height), this.genSize()));
         }
 
-        for(let i = 1; i < amt; i++){
-            this.genCircle(dir, i);
-            this.correctColors(i)
-        }
+        this.genCircle(dir, amt);
+
+        this.list = this.list.concat(this.hitDetector.createClusters(this.list, amt));
     }
 
     addToCanvas(){
@@ -60,57 +59,40 @@ class circleList {
         return Math.ceil(Math.random()* (120 - 20) + 20)
     }
 
-    genCircle(dir, i){
-        let preCircle = this.list[i-1];
-        let w = this.list[i-1].r*2;
+    genCircle(dir, amt){
+        for(let i = 1; i < amt; i++){
+            const r = this.genSize();
+            let x = 0;
+            let y = 0;
+            const c1 = this.list[i-1];
+            const w = c1.r*2;
 
-        if(Array.isArray(preCircle)){
-            preCircle = this.list[i-1][0];
-            w = this.list[i-1][0].r*2
-        }
-
-        const r = this.genSize();
-        let x = 0;
-        let y = 0;
-
-        if(preCircle.x < 0){
-            x = preCircle.x + w;
-            dir.x = dir.x * -1;
-            y = preCircle.y + w * dir.y
-        }
-        else if(preCircle.x > this.ctx.canvas.width){
-            x = preCircle.x - w;
-            dir.x = dir.x * -1;
-            y = preCircle.y - w * dir.y
-        }
-        else if(preCircle.y < 0){
-            y = preCircle.y + w;
-            dir.y = dir.y * -1;
-            x = preCircle.x + w * dir.y
-        }
-        else if(preCircle.y > this.ctx.canvas.height){
-            y = preCircle.y - w;
-            dir.y = dir.y * -1;
-            x = preCircle.x + w * dir.y
-        }
-        else{
-            x = preCircle.x + w * dir.x;
-            y = preCircle.y + w * dir.y
-        }
-
-        let newCircle = new circle(x,y,r);
-
-        this.hitDetector.detectHit(newCircle, this.list);
-    }
-
-    correctColors(i){
-        if(Array.isArray(this.list[i])){
-            for(let k = 0; k < this.list[i].length; k++){
-                const r = 252+(k*4);
-                const g = 68+(k*4);
-                const b = 69+(k*4);
-                this.list[i][k].setColor(r,g,b)
+            if(c1.x < 0){
+                x = c1.x + w;
+                dir.x = dir.x * -1;
+                y = c1.y + w * dir.y
             }
+            else if(c1.x > this.ctx.canvas.width){
+                x = c1.x - w;
+                dir.x = dir.x * -1;
+                y = c1.y - w * dir.y
+            }
+            else if(c1.y < 0){
+                y = c1.y + w;
+                dir.y = dir.y * -1;
+                x = c1.x + w * dir.y
+            }
+            else if(c1.y > this.ctx.canvas.height){
+                y = c1.y - w;
+                dir.y = dir.y * -1;
+                x = c1.x + w * dir.y
+            }
+            else{
+                x = c1.x + w * dir.x;
+                y = c1.y + w * dir.y
+            }
+
+            this.list.push(new circle(x,y,r))
         }
     }
 }
@@ -121,7 +103,7 @@ class circle{
         this.r = r;
         this.x = x;
         this.y = y;
-        this.color = 'rgba(255, 255, 255, 1)'
+        this.color = 'rgba(252, 68, 69, 1)'
     }
 
     setColor(r,g,b){
