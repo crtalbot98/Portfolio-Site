@@ -43,6 +43,7 @@ ul{
 
     .textBox{
         flex-wrap: wrap;
+        width: 90%;
     }
 
     .textTitle{
@@ -52,7 +53,7 @@ ul{
 }
 
 @media screen and (max-width: 500px){
-    .text-box{
+    .textBox{
         width: 95%;
         justify-content: space-evenly;
     }
