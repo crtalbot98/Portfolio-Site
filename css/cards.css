@@ -46,6 +46,10 @@
     color: var(--lightText)
 }
 
+.hoverMenu a:hover{
+    border-bottom: none;
+}
+
 #imgToGradients{
     background-image: url("../images/image-to-gradient.png");
 }
