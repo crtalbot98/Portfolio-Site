@@ -15,7 +15,7 @@ class circleList {
         };
 
         if(this.list.length < 1){
-            this.list.push(new circle(Math.ceil(Math.random()*this.ctx.canvas.width), Math.ceil(Math.random()*this.ctx.canvas.height), this.genSize()));
+            this.list.push(new circle(Math.ceil(Math.random()*this.ctx.canvas.width), Math.ceil(Math.random()*this.ctx.canvas.height)));
         }
 
         this.genCircle(dir, amt);
@@ -25,7 +25,6 @@ class circleList {
 
     addToCanvas(){
         const list = this.list;
-        let k = 0;
 
         for(let i = 0; i < list.length; i++){
             this.ctx.beginPath();
@@ -55,13 +54,8 @@ class circleList {
         return Math.random() < 0.5 ? -1 : 1;
     }
 
-    genSize(){
-        return Math.ceil(Math.random()* (120 - 20) + 20)
-    }
-
     genCircle(dir, amt){
         for(let i = 1; i < amt; i++){
-            const r = this.genSize();
             let x = 0;
             let y = 0;
             const c1 = this.list[i-1];
@@ -92,15 +86,15 @@ class circleList {
                 y = c1.y + w * dir.y
             }
 
-            this.list.push(new circle(x,y,r))
+            this.list.push(new circle(x,y))
         }
     }
 }
 
 class circle{
 
-    constructor(x, y, r) {
-        this.r = r;
+    constructor(x, y) {
+        this.r = this.genSize();
         this.x = x;
         this.y = y;
         this.color = 'rgba(252, 68, 69, 1)'
@@ -108,6 +102,18 @@ class circle{
 
     setColor(r,g,b){
         this.color = `rgba(${r}, ${g}, ${b}, 1)`
+    }
+
+    genSize(){
+        const width = window.innerWidth.toFixed().toString();
+        let mult = 1;
+
+        if(width > 999) mult = width.slice(0,2);
+        else mult = width.charAt(0);
+
+        mult = parseInt(mult);
+
+        return Math.ceil(Math.random()* (12 - 3) + 3) * mult
     }
 }
 
