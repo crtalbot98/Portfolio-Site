@@ -106,14 +106,12 @@ class circle{
 
     genSize(){
         const width = window.innerWidth.toFixed().toString();
-        let mult = 1;
+        let mult;
 
-        if(width > 999) mult = width.slice(0,2);
-        else mult = width.charAt(0);
+        if(width > 999) mult = parseInt(width.slice(0,2))/1.25;
+        else mult = parseInt(width.charAt(0));
 
-        mult = parseInt(mult);
-
-        return Math.ceil(Math.random()* (12 - 3) + 3) * mult
+        return Math.ceil(Math.random()* (10 - 3) + 3) * mult
     }
 }
 
