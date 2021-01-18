@@ -1,9 +1,8 @@
 .textBox{
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     border-left: 2px solid var(--secLight);
-    background-color: var(--secDark);
 }
 
 .textBox h3{
